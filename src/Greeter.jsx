@@ -7,9 +7,9 @@ function Greeter(props) {
       <h2>I believe in you.</h2>
       <p>Today is {new Date().getDay() === 1 ? "Monday" : "not Monday"}</p>
       <h3>Give us your: </h3>
-      <ol>
-        {things.map(thing => <li key={thing}>{thing}</li>)}
-      </ol>
+      <ul>
+        {things.map(thing => <li key={thing.id}>{thing}</li>)}
+      </ul>
 
     </>
   )
